@@ -1,0 +1,17 @@
+﻿<Window x:Class="CrLfChecker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CrLfChecker"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="386.79" Width="950.568">
+    <Grid>
+        <StackPanel>
+            <Label>Directory path:</Label>
+            <TextBox Name="RootDir"></TextBox>
+            <Button Click="ButtonBase_OnClick">Run</Button>
+            <TextBox IsReadOnly="True" Name="ResultsBox" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Visible" TextWrapping="NoWrap"></TextBox>
+        </StackPanel>
+    </Grid>
+</Window>
